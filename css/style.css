@@ -1,0 +1,161 @@
+
+/************global style******************/
+*{
+    margin: 0;
+    padding: 0;
+}
+* *::after, *::before{
+    box-sizing: border-box;
+}
+::selection {
+    background-color: #DD8E58;
+    color: #2B2129;
+}
+/*********************/
+main {
+    min-height: 100vh;
+    background-color: #fce9d3;
+    color: #2B2129;
+    font-family: "PT Sans Caption", sans-serif;
+}
+main h1 {
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    color: #2B2129;
+    width: fit-content;
+    isolation: isolate;
+}
+main h1::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    left: 0;
+    bottom: 10px;
+    transition: height 350ms;
+    background-color: #DD8E58;
+    z-index: -1;
+}
+main h1:hover::before {
+    height: 50%;
+}
+.btn-submit{
+    background-color: #1f5e48;
+    color: #fff;
+}
+.btn-submit:hover{
+    background-color: #11382a;
+    color: #fff;
+    border-color: #1f5e48;
+    transition-duration: .3s;
+}
+.bookmark-body {
+    border-width: 2px 0 2px 0;
+    border-style: dotted;
+    border-color: #2B2129;
+}
+.bookmark-body h2 {
+    font-family: "Righteous", cursive;
+    font-size: 25px;
+    background-image: linear-gradient(to right, #1f5e48, #b17745);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.btn-delete{
+    color: #fff;
+    background-color: #b17745;
+}
+.btn-delete:hover{
+    color: #fff;
+    background-color: #946339;
+    border-color: #b17745;
+    transition-duration: .3s;
+}
+.btn-visit{
+    color: #fff;
+    background-color: #e77e37;
+}
+.btn-visit:hover{
+    color: #fff;
+    background-color: #c45e1a;
+    border-color: #e77e37;
+    transition-duration: .3s;
+}
+.form-control:focus {
+    color: #2B2129;
+    border-color: #DD8E58;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem #dd8d5859;
+}
+.box-info {
+    background-color: #0007;
+}
+.box-conent {
+    width: 500px;
+    z-index: 10;
+}
+.circles span {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+.circles span:nth-child(1) {
+    background-color: #f15f5d;
+}
+.circles span:nth-child(2) {
+    background-color: #febe2e;
+}
+.circles span:nth-child(3) {
+    background-color: #4db748;
+}
+.box-conent p {
+    font-family: "Bree Serif", serif;
+    font-size: 21px;
+    line-height: 1.3;
+    color: #2B2129;
+}
+
+.rules li {
+    font-size: 18px;
+    padding-top: 10px;
+}
+.rules i {
+    color: #bb4120;
+}
+.btn-deleteall{
+    background-image: linear-gradient(to right, #1f5e48, #b17745);
+    color: #fff;
+}
+.btn-deleteall:hover{
+    background-image: linear-gradient(to left, #1f5e48, #b17745);
+    color: #fff;
+    transition-duration: .5s;
+}
+.btn-submitinvalid{
+    background-color: #ad0717;
+    color: #fff;
+}
+.btn-submitinvalid:hover{
+    background-color: #9c0413;
+    color: #fff;
+    border-color: #ad0717;
+    transition-duration: .3s;
+}
+
+
+.form-control.is-valid {
+    border-color: #198754;
+    padding-right: calc(1.5em + .75rem);
+    background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23198754' d='M2.3 6.73.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e);
+    background-repeat: no-repeat;
+    background-position: right calc(.375em + .1875rem) center;
+    background-size: calc(.75em + .375rem) calc(.75em + .375rem);
+}
+.form-control.is-invalid{
+    border-color: #dc3545;
+    padding-right: calc(1.5em + .75rem);
+    background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e);
+    background-repeat: no-repeat;
+    background-position: right calc(.375em + .1875rem) center;
+    background-size: calc(.75em + .375rem) calc(.75em + .375rem);
+}
